@@ -219,6 +219,8 @@ img {
 
 .add-item-map {
   color: #ffffff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .add-item-link {
