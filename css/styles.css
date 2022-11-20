@@ -3,6 +3,7 @@
   --secondary-background-color: #f5f4fa;
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --title-text-bright-color: #ffffff;
   --logo-color-span: #2196f3;
   --logo-color-header: #000000;
   --logo-color-footer: #ffffff;
@@ -306,7 +307,7 @@ img {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--title-text-bright-color);
   letter-spacing: 0.06em;
 }
 
@@ -395,11 +396,35 @@ img {
 }
 
 .examples-item {
+  position: relative;
+
   flex-basis: calc((100% - 60px) / 3);
 }
 
 /* .examples-img {
 } */
+
+.examples-item-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 70px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 27px 0;
+
+  background: rgba(47, 48, 58, 0.8);
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-bright-color);
+}
 
 /* ---------TEAM---------- */
 
