@@ -730,7 +730,8 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close {
@@ -753,5 +754,6 @@ img {
 } */
 
 .backdrop.is-hidden .modal {
+  opacity: 0;
   transform: translate(-50%, -50%) perspective(200px) rotateY(0.5turn);
 }
