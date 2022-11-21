@@ -147,7 +147,7 @@ img {
   content: '';
 
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 
   width: 100%;
@@ -525,7 +525,6 @@ img {
 .team-soc-link:focus {
   background-color: #2196f3;
   color: #ffffff;
-  fill: currentColor;
 }
 
 /* =--------CLIENTS--------- */
